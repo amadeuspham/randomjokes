@@ -41,7 +41,9 @@ export default function Header(){
 			</a>
 			<IconContext.Provider value={{ color: "black" }}>
 				<div className="HeaderIconSection">
-					<AiFillGithub />
+					<a href="https://github.com/amadeuspham/randomjokes/" target="_blank" rel="noopener noreferrer">
+						<AiFillGithub />
+					</a>
 					<a href="https://www.linkedin.com/in/amadeuspham/" target="_blank" rel="noopener noreferrer">
 						<AiFillLinkedin />
 					</a>
