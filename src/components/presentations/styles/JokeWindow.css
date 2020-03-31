@@ -1,0 +1,15 @@
+.JokeWindow {
+	height: 90vh;
+	text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.JokeWindowMain {
+	text-align: center;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

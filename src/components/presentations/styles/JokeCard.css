@@ -1,0 +1,25 @@
+.JokeCard {
+	background-color: #EEEEEE;
+	color: black;
+
+  height: 40vh;
+  width: 70vh;
+
+	padding: 20px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+	text-align: center;
+	font-weight: bold;
+
+  cursor: pointer;
+}
+
+.JokeCardReveal {
+  background-color: #00CC99;
+  color: white;
+}

@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  background-color: #64236e;
+}
+
+.App-link {
+  color: #64236e;
+  text-decoration: none;
+}
+
+.App-link:hover {
+	background-color: #64236e;
+  color: #FFEE88;
+}

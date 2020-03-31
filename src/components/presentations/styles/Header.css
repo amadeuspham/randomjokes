@@ -1,0 +1,21 @@
+.Header {
+  font-family: 'Andale Mono';
+  font-size: calc(14px + 2vmin);
+
+  background-color: #FFEE88;
+  color: white;
+
+  min-height: 10vh;
+  padding: 0 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HeaderIconSection{
+	min-width: 70px;
+	margin: 0 10px;
+	display: flex;
+  justify-content: space-between;
+}
