@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import ReactCardFlip from 'react-card-flip';
 
@@ -8,18 +8,14 @@ import {Joke} from '../containers/ContainerJokeWindow';
 interface JokeCardProps {
 	joke: Joke;
 	loading: boolean;
+	reveal: boolean;
+	setReveal: (reveal: boolean) => void;
 }
 
 export default function JokeCard(props: JokeCardProps) {
-	const {joke, loading}:JokeCardProps = props;
-	const [reveal, setReveal] = useState(false);
-
-	useEffect(() => {
-		if (reveal) setReveal(!reveal);
-	}, [joke]);
+	const {joke, loading, reveal, setReveal}:JokeCardProps = props;
 
 	if (loading) {
-		console.log("load")
 		return (
 			<div className="JokeCard">
 				<CircularProgress/>

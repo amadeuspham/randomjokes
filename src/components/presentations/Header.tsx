@@ -24,9 +24,9 @@ export default function Header(){
     	<header className="Header">
 			<IconContext.Provider value={{ color: "black" }}>
 				<div className="HeaderIconSection">
-					<a href="#">
+					<div className="HeaderIcon">
 						<AiFillInfoCircle onClick={() => setOpenBackdrop(true)}/>
-					</a>
+					</div>
 				</div>
 			</IconContext.Provider>
 			<Backdrop 
