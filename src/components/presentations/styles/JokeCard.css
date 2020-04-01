@@ -17,6 +17,10 @@
 	font-weight: bold;
 
   cursor: pointer;
+
+  -webkit-box-shadow: 10px 10px 39px 0 rgba(0,0,0,0.35);
+  -moz-box-shadow: 10px 10px 39px 0 rgba(0,0,0,0.35);
+  box-shadow: 10px 10px 39px 0 rgba(0,0,0,0.35);
 }
 
 .JokeCardReveal {
@@ -44,6 +48,10 @@
     font-weight: bold;
 
     cursor: pointer;
+
+    -webkit-box-shadow: 10px 10px 39px 0 rgba(0,0,0,0.35);
+    -moz-box-shadow: 10px 10px 39px 0 rgba(0,0,0,0.35);
+    box-shadow: 10px 10px 39px 0 rgba(0,0,0,0.35);
   }
 
   .JokeCardReveal {
