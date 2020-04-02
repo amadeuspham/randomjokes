@@ -36,7 +36,7 @@ export default function Header(){
 			>
 				<AboutCard />
     		</Backdrop>
-			<a className="App-link" href="/" rel="noopener noreferrer">
+			<a className="App-link" href="/randomjokes" rel="noopener noreferrer">
 				Random Jokes
 			</a>
 			<IconContext.Provider value={{ color: "black" }}>
