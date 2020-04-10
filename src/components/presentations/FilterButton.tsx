@@ -60,8 +60,9 @@ export default function FilterButton(props: FilterButtonProps) {
 	const jokeType = currentType.charAt(0).toUpperCase() + currentType.slice(1) + " jokes";
 
 	return (
-		<div>
+		<div >
 			<Button 
+				data-testid="filter-button"
 				aria-controls="joke-filter-menu" 
 				aria-haspopup="true" 
 				onClick={handleClick}
@@ -77,6 +78,7 @@ export default function FilterButton(props: FilterButtonProps) {
 				onClose={handleClose}
 			>
 				<MenuItem 
+					data-testid="all-jokes-choice"
 					className={classes.styledMenuItem}
 					onClick={() => handleChangeType(currentType, "all")} 
 					selected={currentType === "all"}
@@ -84,6 +86,7 @@ export default function FilterButton(props: FilterButtonProps) {
 					All jokes
 				</MenuItem>
 				<MenuItem 
+					data-testid="general-jokes-choice"
 					className={classes.styledMenuItem}
 					onClick={() => handleChangeType(currentType, "general")} 
 					selected={currentType === "general"}
@@ -91,6 +94,7 @@ export default function FilterButton(props: FilterButtonProps) {
 					General jokes
 				</MenuItem>
 				<MenuItem 
+					data-testid="programming-jokes-choice"
 					className={classes.styledMenuItem}
 					onClick={() => handleChangeType(currentType, "programming")} 
 					selected={currentType === "programming"}

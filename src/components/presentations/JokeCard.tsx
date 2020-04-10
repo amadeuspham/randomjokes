@@ -17,7 +17,7 @@ export default function JokeCard(props: JokeCardProps) {
 
 	if (loading) {
 		return (
-			<div className="JokeCard">
+			<div data-testid="joke-card-loading" className="JokeCard">
 				<CircularProgress/>
 			</div>
 		)
@@ -25,15 +25,15 @@ export default function JokeCard(props: JokeCardProps) {
 
 	return (
 		<ReactCardFlip isFlipped={reveal}>
-			<div className="JokeCard" onClick={() => setReveal(!reveal)}>
+			<div data-testid="joke-card-setup" className="JokeCard" onClick={() => setReveal(!reveal)}>
 				<p>{joke.setup}</p>
 			</div>
 
 			{reveal 
-				?	<div className="JokeCard JokeCardReveal" onClick={() => setReveal(!reveal)}>
+				?	<div data-testid="joke-card-punchline" className="JokeCard JokeCardReveal" onClick={() => setReveal(!reveal)}>
 						<p>{joke.punchline}</p>
 					</div>
-				:	<div className="JokeCard JokeCardReveal"/>
+				:	<div data-testid="joke-card-punchline" className="JokeCard JokeCardReveal"/>
 			}
 		</ReactCardFlip>
 	);

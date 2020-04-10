@@ -1,0 +1,244 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <header
+      class="Header"
+    >
+      <div
+        class="HeaderIconSection"
+      >
+        <div
+          class="HeaderIcon"
+        >
+          <svg
+            data-testid="info-icon"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            style="color: black;"
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 0 1 0-96 48.01 48.01 0 0 1 0 96z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        class="MuiBackdrop-root makeStyles-backdrop-249"
+        style="opacity: 0; visibility: hidden;"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root makeStyles-root-252 MuiPaper-elevation1 MuiPaper-rounded"
+          data-testid="about-card"
+        >
+          <div
+            class="MuiCardContent-root"
+          >
+            <p
+              class="MuiTypography-root makeStyles-title-253 MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
+            >
+              About this website
+            </p>
+            <h2
+              class="MuiTypography-root MuiTypography-h5"
+            >
+              Random Jokes
+            </h2>
+            <p
+              class="MuiTypography-root makeStyles-pos-254 MuiTypography-body1 MuiTypography-colorTextSecondary"
+            >
+              by Harry Pham
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2"
+            >
+              A small and fun website created during COVID-19 self-isolation period.
+              <br />
+              Built with React and TypeScript, the jokes themselves are fetched from  
+              <br />
+              <a
+                href="https://github.com/15Dkatz/official_joke_api"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Official Joke API
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <a
+        class="App-link"
+        href="/randomjokes"
+        rel="noopener noreferrer"
+      >
+        Random Jokes
+      </a>
+      <div
+        class="HeaderIconSection"
+      >
+        <a
+          data-testid="github-icon"
+          href="https://github.com/amadeuspham/randomjokes/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            style="color: black;"
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+            />
+          </svg>
+        </a>
+        <a
+          data-testid="linkedin-icon"
+          href="https://www.linkedin.com/in/amadeuspham/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            style="color: black;"
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"
+            />
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div
+      class="JokeWindow"
+    >
+      <div
+        class="MuiGrid-root JokeWindowMain MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item"
+        >
+          <div
+            class="DirectedButton"
+            data-testid="up-button"
+          >
+            <svg
+              class="DirectionIcon"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 217.9L383 345c9.4 9.4 24.6 9.4 33.9 0 9.4-9.4 9.3-24.6 0-34L273 167c-9.1-9.1-23.7-9.3-33.1-.7L95 310.9c-4.7 4.7-7 10.9-7 17s2.3 12.3 7 17c9.4 9.4 24.6 9.4 33.9 0l127.1-127z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item"
+        >
+          <div
+            class="react-card-flip"
+            style="z-index: auto;"
+          >
+            <div
+              class="react-card-flipper"
+              style="position: relative; width: 100%; height: 100%;"
+            >
+              <div
+                class="react-card-front"
+                style="left: 0px; position: relative; top: 0px; transform: rotateY(0deg); width: 100%; height: 100%; z-index: 2; transition: 0.6s;"
+              >
+                <div
+                  class="JokeCard"
+                  data-testid="joke-card-setup"
+                >
+                  <p>
+                    Why does Norway have barcodes on their battleships?
+                  </p>
+                </div>
+              </div>
+              <div
+                class="react-card-back"
+                style="left: 0px; position: absolute; transform: rotateY(-180deg); top: 0px; width: 100%; height: 100%; transition: 0.6s;"
+              >
+                <div
+                  class="JokeCard JokeCardReveal"
+                  data-testid="joke-card-punchline"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item"
+        >
+          <div
+            class="DirectedButton"
+            data-testid="down-button"
+          >
+            <svg
+              class="DirectionIcon"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button
+          aria-controls="joke-filter-menu"
+          aria-haspopup="true"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-styledButton-430"
+          data-testid="filter-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            All jokes
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

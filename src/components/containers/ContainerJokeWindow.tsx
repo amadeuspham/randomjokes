@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from 'axios';
+
 import JokeWindow from '../presentations/JokeWindow';
 
 export interface Joke {
@@ -23,11 +25,11 @@ export default class ContainerJokeWindow extends React.Component {
 		currentType: "all",
 	}
 
-	componentDidMount(){
-		this.loadTenJokes();
+	async componentDidMount(): Promise<void> {
+		await this.loadTenJokes();
 	}
 
-	loadTenJokes = (direction: string = "forward") => {
+	loadTenJokes = async (direction: string = "forward") => {
 		const {allJokes, currentType}: JokeWindowState = this.state;
 		let urlString: string = "https://official-joke-api.appspot.com/random_ten";
 
@@ -37,21 +39,20 @@ export default class ContainerJokeWindow extends React.Component {
 			urlString = "https://official-joke-api.appspot.com/jokes/programming/ten";
 		}
 
-		fetch(urlString)
-	    .then(response => response.json())
-	    .then(tenJokes => {
-	    	if (direction === "forward") {
-				this.setState({
-					allJokes: [...allJokes, ...tenJokes],
-					loading: false,
-				})
-	    	} else {
-				this.setState({
-					allJokes: [...tenJokes, ...allJokes],
-					loading: false,
-				})
-	    	}
-	    });
+		const response = await axios.get(urlString);
+		const tenJokes: Array<Joke> = response.data;
+
+  	if (direction === "forward") {
+			this.setState({
+				allJokes: [...allJokes, ...tenJokes],
+				loading: false,
+			})
+  	} else {
+			this.setState({
+				allJokes: [...tenJokes, ...allJokes],
+				loading: false,
+			})
+  	}
 	}
 
 	pickJoke = (direction: string) => {

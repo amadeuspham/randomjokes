@@ -31,7 +31,7 @@ export default function JokeWindow(props: JokeWindowProps) {
 		<div className="JokeWindow">
 			<Grid container className="JokeWindowMain">
 				<Grid item>
-					<div className="DirectedButton" onClick={() => changeJoke("back")}>
+					<div data-testid="up-button" className="DirectedButton" onClick={() => changeJoke("back")}>
 						<IoIosArrowUp className="DirectionIcon"/>
 					</div>	
 				</Grid>
@@ -39,7 +39,7 @@ export default function JokeWindow(props: JokeWindowProps) {
 					<JokeCard joke={joke} loading={loading} reveal={reveal} setReveal={setReveal}/>
 				</Grid>
 				<Grid item>
-					<div className="DirectedButton" onClick={() => changeJoke("forward")}>
+					<div data-testid="down-button" className="DirectedButton" onClick={() => changeJoke("forward")}>
 						<IoIosArrowDown className="DirectionIcon"/>
 					</div>	
 				</Grid>

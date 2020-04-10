@@ -21,7 +21,7 @@ export default function AboutCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} data-testid="about-card">
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           About this website

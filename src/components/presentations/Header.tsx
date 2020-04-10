@@ -22,33 +22,33 @@ export default function Header(){
 
 	return (
     	<header className="Header">
-			<IconContext.Provider value={{ color: "black" }}>
-				<div className="HeaderIconSection">
-					<div className="HeaderIcon">
-						<AiFillInfoCircle onClick={() => setOpenBackdrop(true)}/>
+				<IconContext.Provider value={{ color: "black" }}>
+					<div className="HeaderIconSection">
+						<div className="HeaderIcon">
+							<AiFillInfoCircle data-testid="info-icon" onClick={() => setOpenBackdrop(true)}/>
+						</div>
 					</div>
-				</div>
-			</IconContext.Provider>
-			<Backdrop 
-				className={classes.backdrop} 
-				open={openBackdrop} 
-				onClick={() => setOpenBackdrop(false)}
-			>
-				<AboutCard />
-    		</Backdrop>
-			<a className="App-link" href="/randomjokes" rel="noopener noreferrer">
-				Random Jokes
-			</a>
-			<IconContext.Provider value={{ color: "black" }}>
-				<div className="HeaderIconSection">
-					<a href="https://github.com/amadeuspham/randomjokes/" target="_blank" rel="noopener noreferrer">
-						<AiFillGithub />
-					</a>
-					<a href="https://www.linkedin.com/in/amadeuspham/" target="_blank" rel="noopener noreferrer">
-						<AiFillLinkedin />
-					</a>
-				</div>
-			</IconContext.Provider>
+				</IconContext.Provider>
+				<Backdrop 
+					className={classes.backdrop} 
+					open={openBackdrop} 
+					onClick={() => setOpenBackdrop(false)}
+				>
+					<AboutCard />
+	    	</Backdrop>
+				<a className="App-link" href="/randomjokes" rel="noopener noreferrer">
+					Random Jokes
+				</a>
+				<IconContext.Provider value={{ color: "black" }}>
+					<div className="HeaderIconSection">
+						<a href="https://github.com/amadeuspham/randomjokes/" target="_blank" rel="noopener noreferrer" data-testid="github-icon">
+							<AiFillGithub />
+						</a>
+						<a href="https://www.linkedin.com/in/amadeuspham/" target="_blank" rel="noopener noreferrer"  data-testid="linkedin-icon">
+							<AiFillLinkedin />
+						</a>
+					</div>
+				</IconContext.Provider>
     	</header>
 	);
 }
