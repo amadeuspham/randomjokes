@@ -25,15 +25,34 @@ export default function JokeCard(props: JokeCardProps) {
 
 	return (
 		<ReactCardFlip isFlipped={reveal}>
-			<div data-testid="joke-card-setup" className="JokeCard" onClick={() => setReveal(!reveal)}>
+			<div 
+				data-testid="joke-card-setup" 
+				role="button" 
+				aria-label="Joke setup" 
+				tabIndex={0}
+				className="JokeCard" 
+				onClick={() => setReveal(!reveal)}
+				onKeyDown={event => {return event.keyCode != 13 || setReveal(!reveal)}}
+			>
 				<p>{joke.setup}</p>
 			</div>
 
 			{reveal 
-				?	<div data-testid="joke-card-punchline" className="JokeCard JokeCardReveal" onClick={() => setReveal(!reveal)}>
+				?	<div 
+						data-testid="joke-card-punchline" 
+						className="JokeCard JokeCardReveal" 
+						role="button"
+						aria-label="Joke punchline" 
+						tabIndex={0}
+						onClick={() => setReveal(!reveal)}
+						onKeyDown={event => {return event.keyCode != 13 || setReveal(!reveal)}}
+					>
 						<p>{joke.punchline}</p>
 					</div>
-				:	<div data-testid="joke-card-punchline" className="JokeCard JokeCardReveal"/>
+				:	<div 
+						data-testid="joke-card-punchline" 
+						className="JokeCard JokeCardReveal"
+					/>
 			}
 		</ReactCardFlip>
 	);

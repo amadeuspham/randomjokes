@@ -24,8 +24,13 @@ export default function Header(){
     	<header className="Header">
 				<IconContext.Provider value={{ color: "black" }}>
 					<div className="HeaderIconSection">
-						<div className="HeaderIcon">
-							<AiFillInfoCircle data-testid="info-icon" onClick={() => setOpenBackdrop(true)}/>
+						<div aria-label="Info about this website" aria-pressed="false" role='button' className="HeaderIcon">
+							<AiFillInfoCircle 
+								data-testid="info-icon" 
+								tabIndex={0} 
+								onClick={() => setOpenBackdrop(!openBackdrop)}
+								onKeyDown={event => {return event.keyCode != 13 || setOpenBackdrop(!openBackdrop)}}
+							/>
 						</div>
 					</div>
 				</IconContext.Provider>
@@ -41,10 +46,24 @@ export default function Header(){
 				</a>
 				<IconContext.Provider value={{ color: "black" }}>
 					<div className="HeaderIconSection">
-						<a href="https://github.com/amadeuspham/randomjokes/" target="_blank" rel="noopener noreferrer" data-testid="github-icon">
+						<a 
+							aria-label="Visit Github repo of this website" 
+							role='button'
+							href="https://github.com/amadeuspham/randomjokes/" 
+							target="_blank" 
+							rel="noopener noreferrer" 
+							data-testid="github-icon"
+						>
 							<AiFillGithub />
 						</a>
-						<a href="https://www.linkedin.com/in/amadeuspham/" target="_blank" rel="noopener noreferrer"  data-testid="linkedin-icon">
+						<a 
+							aria-label="Visit author's LinkedIn profile" 
+							role='button'
+							href="https://www.linkedin.com/in/amadeuspham/" 
+							target="_blank" 
+							rel="noopener noreferrer"  
+							data-testid="linkedin-icon"
+						>
 							<AiFillLinkedin />
 						</a>
 					</div>
