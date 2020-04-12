@@ -29,7 +29,7 @@ export default function Header(){
 								data-testid="info-icon" 
 								tabIndex={0} 
 								onClick={() => setOpenBackdrop(!openBackdrop)}
-								onKeyDown={event => {return event.keyCode != 13 || setOpenBackdrop(!openBackdrop)}}
+								onKeyDown={event => {return event.keyCode !== 13 || setOpenBackdrop(!openBackdrop)}}
 							/>
 						</div>
 					</div>

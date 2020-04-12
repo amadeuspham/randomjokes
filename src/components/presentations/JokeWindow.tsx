@@ -27,12 +27,6 @@ export default function JokeWindow(props: JokeWindowProps) {
 		pickJoke(direction)
 	}
 
-	const handlers = {
-	  NEXT_JOKE: (event: KeyboardEvent | undefined) => changeJoke("forward"),
-	  PREV_JOKE: (event: KeyboardEvent | undefined) => changeJoke("back"),
-	  TOGGLE_JOKE: (event: KeyboardEvent | undefined) => setReveal(!reveal),
-  };
-
 	return (
 		<div className="JokeWindow">
 			<Grid container className="JokeWindowMain">
@@ -44,7 +38,7 @@ export default function JokeWindow(props: JokeWindowProps) {
 						role='button' 
 						className="DirectedButton" 
 						onClick={() => changeJoke("back")}
-						onKeyDown={event => {return event.keyCode != 13 || changeJoke("back")}}
+						onKeyDown={event => {return event.keyCode !== 13 || changeJoke("back")}}
 					>
 						<IoIosArrowUp className="DirectionIcon"/>
 					</div>	
@@ -60,7 +54,7 @@ export default function JokeWindow(props: JokeWindowProps) {
 						role='button' 
 						className="DirectedButton" 
 						onClick={() => changeJoke("forward")}
-						onKeyDown={event => {return event.keyCode != 13 || changeJoke("forward")}}
+						onKeyDown={event => {return event.keyCode !== 13 || changeJoke("forward")}}
 					>
 						<IoIosArrowDown className="DirectionIcon"/>
 					</div>	

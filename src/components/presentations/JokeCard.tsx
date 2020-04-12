@@ -32,7 +32,7 @@ export default function JokeCard(props: JokeCardProps) {
 				tabIndex={0}
 				className="JokeCard" 
 				onClick={() => setReveal(!reveal)}
-				onKeyDown={event => {return event.keyCode != 13 || setReveal(!reveal)}}
+				onKeyDown={event => {return event.keyCode !== 13 || setReveal(!reveal)}}
 			>
 				<p>{joke.setup}</p>
 			</div>
@@ -45,7 +45,7 @@ export default function JokeCard(props: JokeCardProps) {
 						aria-label="Joke punchline" 
 						tabIndex={0}
 						onClick={() => setReveal(!reveal)}
-						onKeyDown={event => {return event.keyCode != 13 || setReveal(!reveal)}}
+						onKeyDown={event => {return event.keyCode !== 13 || setReveal(!reveal)}}
 					>
 						<p>{joke.punchline}</p>
 					</div>
