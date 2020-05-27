@@ -18,7 +18,8 @@
     "react-icons": "^3.9.0",
     "react-scripts": "3.4.1",
     "serve": "^11.3.1",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "axios": "^0.19.2"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -26,8 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "react-scripts start",
-    "start": "serve -s build",
+    "start": "react-scripts start",
     "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
@@ -47,7 +47,6 @@
   },
   "homepage": "https://amadeuspham.github.io/randomjokes/",
   "devDependencies": {
-    "axios": "^0.19.2",
     "react-test-renderer": "^16.13.1"
   }
 }
